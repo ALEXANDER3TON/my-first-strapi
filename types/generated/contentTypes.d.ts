@@ -858,7 +858,7 @@ export interface ApiDemoTypeDemoType extends Schema.CollectionType {
     status: Attribute.Boolean &
       Attribute.SetPluginOptions<{
         i18n: {
-          localized: true;
+          localized: false;
         };
       }> &
       Attribute.DefaultTo<false>;
@@ -912,7 +912,8 @@ export interface ApiRestautantRestautant extends Schema.CollectionType {
   info: {
     singularName: 'restautant';
     pluralName: 'restautants';
-    displayName: 'Restautant';
+    displayName: 'Restaurant';
+    description: '';
   };
   options: {
     draftAndPublish: true;
