@@ -830,6 +830,7 @@ export interface ApiDemoTypeDemoType extends Schema.CollectionType {
     singularName: 'demo-type';
     pluralName: 'demo-types';
     displayName: 'DemoType';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -848,6 +849,35 @@ export interface ApiDemoTypeDemoType extends Schema.CollectionType {
         };
       }>;
     pass: Attribute.Password &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    status: Attribute.Boolean &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }> &
+      Attribute.DefaultTo<false>;
+    Price: Attribute.Decimal &
+      Attribute.Required &
+      Attribute.Unique &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Email: Attribute.Email &
+      Attribute.Required &
+      Attribute.Unique &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Image: Attribute.Media &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
