@@ -49,7 +49,7 @@
           "localized": true
         }
       },
-      "type": "decimal",
+      "type": "biginteger",
       "required": true,
       "unique": true
     },
@@ -64,14 +64,15 @@
       "unique": true
     },
     "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": true,
       "pluginOptions": {
         "i18n": {
           "localized": true

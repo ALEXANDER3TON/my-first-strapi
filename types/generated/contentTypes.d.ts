@@ -861,7 +861,7 @@ export interface ApiDemoTypeDemoType extends Schema.CollectionType {
         };
       }> &
       Attribute.DefaultTo<false>;
-    Price: Attribute.Decimal &
+    Price: Attribute.BigInteger &
       Attribute.Required &
       Attribute.Unique &
       Attribute.SetPluginOptions<{
