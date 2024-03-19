@@ -32,7 +32,8 @@
           "localized": true
         }
       },
-      "type": "password"
+      "type": "password",
+      "private": true
     },
     "status": {
       "pluginOptions": {
@@ -51,7 +52,7 @@
       },
       "type": "biginteger",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "Email": {
       "pluginOptions": {

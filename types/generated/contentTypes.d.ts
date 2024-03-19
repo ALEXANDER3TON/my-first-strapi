@@ -849,6 +849,7 @@ export interface ApiDemoTypeDemoType extends Schema.CollectionType {
         };
       }>;
     pass: Attribute.Password &
+      Attribute.Private &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -863,7 +864,6 @@ export interface ApiDemoTypeDemoType extends Schema.CollectionType {
       Attribute.DefaultTo<false>;
     Price: Attribute.BigInteger &
       Attribute.Required &
-      Attribute.Unique &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
